@@ -7,7 +7,7 @@ class Teste3 {
 		char a = 'a';
 		int letraA = a;
 		long idade = 25L;
-		System.out.println(25);
+		System.out.println(letraA);
 		float pi = 3.14F;
 		float outroPi = 3.14f;
 	}
