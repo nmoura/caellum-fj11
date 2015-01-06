@@ -1,0 +1,15 @@
+Especificação do Funcionário
+----------------------------
+
+Atributos:
+	nome
+	departamento	
+	salario
+	dataDeEntradaNoBanco
+	rg
+
+Comportamentos:
+	recebeAumento
+	transferidoDepartamento
+	contratado
+	demitido

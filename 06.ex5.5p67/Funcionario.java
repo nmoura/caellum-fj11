@@ -3,7 +3,6 @@ class Funcionario {
 	String nome;
 	String departamento;
 	double salario;
-	//String dataEntrada;
 	Data dataEntrada;
 	String rg;
 
@@ -31,11 +30,41 @@ class Funcionario {
 	void transfereDepartamento(String novoDepartamento) {
 		departamento = novoDepartamento;
 	}
+
 }
 
 class Data {
 	int dia;
 	int mes;
 	int ano;
+}
 
+class Empresa {
+
+	String nome;
+	String cnpj;
+	Funcionario[] empregados;
+	int posicaoLivre;
+
+	void adiciona(Funcionario f) {
+		if (this.posicaoLivre < this.empregados.length){
+			this.empregados[this.posicaoLivre++] = f;
+		}
+	}
+
+	void mostraEmpregados() {
+		for (int i = 0; i < this.posicaoLivre; i++) {
+			this.empregados[i].mostra();
+		}
+	}
+
+/*	boolean contem(Funcionario f) {
+		for (int i = 0; i < this.posicaoLivre; i++) {
+			if (this.empregados[i] == f) {
+				System.out.println("Empregado " + i + " existe.");
+				return true;
+*/
+			}
+		}
+	}
 }
