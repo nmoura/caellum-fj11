@@ -21,7 +21,7 @@ class Funcionario {
 	}
 
 	double calculaGanhoAnual() {
-		double ganhoAnual = salario * 12;
+		double ganhoAnual = this.salario * 12;
 		return ganhoAnual;
 	}
 
