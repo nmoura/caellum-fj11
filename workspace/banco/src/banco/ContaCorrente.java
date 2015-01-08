@@ -1,6 +1,6 @@
 package banco;
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements Tributavel {
 
 	@Override
 	public void atualiza(double taxa) {
@@ -10,6 +10,11 @@ public class ContaCorrente extends Conta {
 	@Override
 	public void deposita(double valor) {
 		this.saldo += valor - 0.10;
+	}
+
+	@Override
+	public double calculaTributos() {
+		return this.getSaldo() * 0.01;
 	}
 
 }
