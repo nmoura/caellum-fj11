@@ -1,4 +1,7 @@
-package banco;
+package br.com.caelum.banco.testes;
+
+import br.com.caelum.banco.contas.ContaCorrente;
+import br.com.caelum.banco.contas.Tributavel;
 
 public class TestaTributavel {
 
@@ -12,5 +15,4 @@ public class TestaTributavel {
 		Tributavel t = cc;
 		System.out.println(t.calculaTributos());
  	}
-
 }

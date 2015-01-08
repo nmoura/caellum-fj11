@@ -1,4 +1,4 @@
-package banco;
+package br.com.caelum.banco.contas;
 
 public class ContaCorrente extends Conta implements Tributavel {
 

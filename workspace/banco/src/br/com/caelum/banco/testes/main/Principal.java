@@ -1,4 +1,9 @@
-package banco;
+package br.com.caelum.banco.testes.main;
+
+import br.com.caelum.banco.contas.AtualizadorDeContas;
+import br.com.caelum.banco.contas.Conta;
+import br.com.caelum.banco.contas.ContaCorrente;
+import br.com.caelum.banco.contas.ContaPoupanca;
 
 public class Principal {
 

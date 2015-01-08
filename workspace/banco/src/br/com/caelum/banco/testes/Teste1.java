@@ -1,4 +1,4 @@
-package banco;
+package br.com.caelum.banco.testes;
 
 import java.io.FileNotFoundException;
 
