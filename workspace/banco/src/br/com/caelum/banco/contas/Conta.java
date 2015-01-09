@@ -12,6 +12,7 @@ package br.com.caelum.banco.contas;
 public abstract class Conta {
 
 	protected double saldo;
+	protected int numero;
 
 	/**
 	 * Método que verifica se o valor depositado é negativo e, caso seja positivo, manipula o saldo.
@@ -35,4 +36,19 @@ public abstract class Conta {
 	public double getSaldo() {
 		return this.saldo;
 	}
+	
+	public boolean equals(Object obj) {
+		Conta outraConta = (Conta) obj;
+		return this.numero == outraConta.numero;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	
 }
